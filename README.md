@@ -128,21 +128,6 @@ http://localhost:8080
 - **Post/Redirect/Get (PRG):** setelah form POST diproses, aplikasi melakukan redirect agar refresh tidak mengirim ulang form.
 - **Kredensial:** simpan konfigurasi lokal di `.env`; jangan gunakan konfigurasi pengembangan sebagai pengaturan produksi.
 
-## Checklist Pengujian Manual
-
-- [ ] Import `database/schema.sql`, atur `.env`, lalu buka aplikasi.
-- [ ] Tambahkan produk dengan data valid; produk muncul di katalog.
-- [ ] Coba nama kosong atau kurang dari 3 karakter; aplikasi menolak input.
-- [ ] Coba nama yang sudah dipakai; aplikasi menampilkan pesan duplikat.
-- [ ] Coba harga kosong, bukan angka, nol, atau negatif; aplikasi menolak input.
-- [ ] Coba stok negatif atau pecahan; aplikasi menolak input. Stok 0 harus diterima.
-- [ ] Edit produk, simpan perubahan, lalu pastikan data diperbarui.
-- [ ] Hapus produk melalui tombol hapus dan pastikan ada konfirmasi.
-- [ ] Pastikan request GET tidak dapat menghapus produk.
-- [ ] Pastikan token CSRF yang hilang atau tidak valid ditolak.
-- [ ] Masukkan teks HTML seperti `<script>alert(1)</script>` dan pastikan tidak dieksekusi.
-- [ ] Refresh setelah submit dan pastikan operasi tidak terkirim ulang.
-- [ ] Uji tampilan pada ukuran desktop dan ponsel.
 
 ## Catatan Implementasi
 
